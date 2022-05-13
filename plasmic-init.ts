@@ -1,5 +1,7 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
 
+import { Button as MuiButton, ButtonGroup as MuiButtonGroup, } from "@material-ui/core";
+
 export const PLASMIC = initPlasmicLoader({
   projects: [
     {
@@ -13,6 +15,41 @@ export const PLASMIC = initPlasmicLoader({
   // project, allowing you to see your designs without publishing.  Please
   // only use this for development, as this is significantly slower.
   preview: false,
+});
+
+
+PLASMIC.registerComponent(MuiButton, {
+  name: "MuiButton",
+  props: {
+    children: "slot",
+    disabled: "boolean",
+    color: {
+      type: "choice",
+      options: ["primary", "secondary"],
+    },
+    variant: {
+      type: "choice",
+      options: ["contained", "outlined", "text"],
+    },
+    href: "string",
+  },
+  importName: "Button",
+});
+
+PLASMIC.registerComponent(MuiButtonGroup, {
+  name: "MuiButtonGroup",
+  props: {
+    color: {
+      type: "choice",
+      options: ["primary", "secondary"],
+    },
+    variant: {
+      type: "choice",
+      options: ["contained", "outlined", "text"],
+    },
+    children: "slot",
+  },
+  importName: "ButtonGroup",
 });
 
 // You can register any code components that you want to use here; see
