@@ -1,0 +1,115 @@
+.root {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: stretch;
+  flex-shrink: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+  min-width: 0;
+  padding: 89px 8px 150px;
+}
+.root > :nth-child(2n + 1) {
+  width: calc((100% - 2 * 0px) * 6 / 12);
+}
+.root > :nth-child(2n + 2) {
+  width: calc((100% - 2 * 0px) * 6 / 12);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 1px;
+    padding-bottom: 172px;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root > :nth-child(1n + 1) {
+    width: calc((100% - 1 * 0px) * 12 / 12);
+  }
+}
+.column__k1EWr {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+}
+.freeBox___6RlIp {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 76px;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox___6RlIp {
+    padding-top: 55px;
+  }
+}
+.slotTargetSlot {
+  font-size: 50px;
+}
+.freeBox___4YdkJ {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.slotTargetChildren {
+  font-size: 30px;
+}
+.column__mpS8S {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  min-width: 0;
+  padding: 0px 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .column__mpS8S {
+    padding-top: 0px;
+  }
+}
+.freeBox__qg21V {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 0px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__qg21V {
+    margin-top: 73px;
+  }
+}
+.img__p4C3C {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  margin-top: 0;
+}
+.img__p4C3C > picture > img {
+  object-fit: cover;
+}
+.img__p4C3C > .__wab_img-spacer > img {
+  object-fit: cover;
+}
